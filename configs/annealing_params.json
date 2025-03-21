@@ -1,0 +1,17 @@
+{  
+    "simulated_annealing": {
+        // Max number of iterations of the algorithm
+        "max_iter": 1e6,
+        // Error tolerance for accepting a solution
+        "tolerance": 1e-15,
+        // Starting temperature for simulated annealing
+        "start_temp": 500,
+        // Cooling rate (MUST be between 0 and 1)
+        "cooling_rate": 0.975,
+        // Amount of iterations between coolings
+        "cooling_delay": 1000,
+        // Set whether the simulation should begin from the l-space origin or a random starting point
+        // Distribution for random starting point is N(0,1)
+        "from_origin": true
+  }
+}

@@ -1,0 +1,12 @@
+Objectives
+
+1. Random walk plots
+    1.1 Total frequency histogram
+
+2. Symbolic regression by computing mse
+    2.1 Simulated Annealing
+    2.2 Result counter
+
+3. Study training and expression generation based on specified symbols
+
+https://paperswithcode.com/paper/deep-symbolic-regression-recovering/review/
