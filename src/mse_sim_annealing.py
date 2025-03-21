@@ -34,7 +34,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         results.save_expr_data(iteration=0, mse=best_mse, expr=current_expr, coords=current_vector)
         print(f"start: {current_expr}   mse: {best_mse}\n")
     else:
-        if from_origin:
+        if params["from_origin"]:
             raise ValueError("Invalid starting point. Restart the run with different independent values or set 'from_origin' to False.")
         else:
             raise ValueError("Invalid starting point. Restart run.")
@@ -51,14 +51,14 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         except RecursionError:
             print(f"Recursion Limit: Stopped after {i} iterations.\n")
             return results
-            
+
         # Evaluating expression and calculating mse
         new_mse = min(get_expr_mse(evaluator, new_expr))
         mse_delta = new_mse - current_mse
 
         # Applying SA probabilistic model for accepting changes
         if mse_delta <= 0 or np.exp(-mse_delta / temp) > np.random.rand(): # Accept change
-            try:    
+            try:
                 results.save_expr_data(iteration=i, mse=new_mse, expr=new_expr, coords=new_vector)
                 current_mse = new_mse
                 current_expr = copy.deepcopy(new_expr)
@@ -66,7 +66,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
             except RecursionError:
                 print(f"Recursion Limit: Stopped after {i} iterations.\n")
                 return results
-                
+
             # Updating the best solution if necessary
             if current_mse <= best_mse:
                 results.set_best(current_mse, current_expr, current_vector)
@@ -85,7 +85,6 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         print(f"MSE converged to tolerance {params['tolerance']} in {results.steps()} steps over {i-1} iterations.\n")
     else:
         print(f"Stopped after reaching max iterations ({int(params['max_iter'])}).\n")
-        
     return results
 
 if __name__ == '__main__':
@@ -95,7 +94,7 @@ if __name__ == '__main__':
     parser.add_argument("-targets", default=1)
 
     args = parser.parse_args()
-    
+
     config = load_config_file(args.config)
     expr_config = config["expression_definition"]
     es_config = config["expression_set_generation"]
@@ -103,7 +102,7 @@ if __name__ == '__main__':
     sy_lib = generate_symbol_library(expr_config["num_variables"], expr_config["symbols"], expr_config["has_constants"])
     so = {s["symbol"]: s for s in sy_lib}
     HVAE.add_symbols(sy_lib)
-    
+
     model = torch.load(training_config["param_path"], weights_only=False)
 
     params = load_config_file("../configs/annealing_params.json")["simulated_annealing"]
@@ -117,22 +116,22 @@ if __name__ == '__main__':
         "log ( X + 1 ) + log ( X ^2 + 1 )",
         "sqrt ( X )"
     ]
-    
+
     for i in range(4,len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
-        
+
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
         results_path = "../seeslab/sa_ng_04" + f"/nguyen{i}"
         clean_folder(results_path)
         plots=[]
-        
+
         for i in range(int(args.runs)):
             reg_data = mse_sim_annealing(model, data, params)
             reg_data.to_txt(results_path + f"/mse_run{i}.txt")
             reg_data.plot_all(results_path + f"/plots{i}")
             plots.append(reg_data.plots["plotData_steps_error"])
-        
+
         plot_avg(plots, results_path, "steps", "avg_error")
         overlap_plots(plots, results_path, "steps", "error")

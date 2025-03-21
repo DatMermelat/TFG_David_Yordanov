@@ -8,7 +8,7 @@ import os
 from model import HVAE
 from hvae_utils import load_config_file, tokens_to_tree
 from symbol_library import generate_symbol_library
-from seeslab_utils import expr_is_unique, torch_to_coords, expr_complexity, clean_folder 
+from seeslab_utils import expr_is_unique, torch_to_coords, expr_complexity, clean_folder
 from evaluation import RustEval
 from tree import Node
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     sy_lib = generate_symbol_library(expr_config["num_variables"], expr_config["symbols"], expr_config["has_constants"])
     so = {s["symbol"]: s for s in sy_lib}
     HVAE.add_symbols(sy_lib)
-    
+
     model = torch.load(training_config["param_path"], weights_only = False)
     str_expr = "sin ( X ^2 ) * cos ( X ) - 1"
     tokens_expr = str_expr.split(" ")
