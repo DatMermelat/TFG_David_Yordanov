@@ -1,7 +1,7 @@
-{  
+{
     "simulated_annealing": {
         // Max number of iterations of the algorithm
-        "max_iter": 1e6,
+        "max_iter": 1e3,
         // Error tolerance for accepting a solution
         "tolerance": 1e-15,
         // Starting temperature for simulated annealing

@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
-        results_path = "../seeslab/sa_ng_04" + f"/nguyen{i}"
+        results_path = "../seeslab/sa_" + f"/nguyen{i}"
         clean_folder(results_path)
         plots=[]
 
@@ -133,5 +133,4 @@ if __name__ == '__main__':
             reg_data.plot_all(results_path + f"/plots{i}")
             plots.append(reg_data.plots["plotData_steps_error"])
 
-        plot_avg(plots, results_path, "steps", "avg_error")
         overlap_plots(plots, results_path, "steps", "error")
