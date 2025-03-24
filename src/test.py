@@ -29,5 +29,8 @@ if __name__ == '__main__':
     str_expr = "sin ( X ^2 ) * cos ( X ) - 1"
     tokens_expr = str_expr.split(" ")
     print(tokens_expr)
-    tree = tokens_to_tree(tokens_expr, so)
-    print(tree)
+    treeA = tokens_to_tree(tokens_expr, so)
+    treeB = treeA
+    treeA = model.decode(torch.randn(1,1,32))[0]
+    print(treeA)
+    print(treeB)

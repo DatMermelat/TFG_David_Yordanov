@@ -23,16 +23,15 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
     results = RegressionData()
 
     # Setting starting point
-    current_vector, current_expr, best_mse = set_starting_point(model, evaluator, params["from_origin"])
-    current_mse = best_mse
-    new_expr, new_vector = copy.deepcopy(current_expr), current_vector.clone()
-    results.set_best(best_mse, current_expr, current_vector)
+    current_vector, current_expr, current_mse = set_starting_point(model, evaluator, params["from_origin"])
+    results.set_best(current_mse, current_expr, current_vector)
+    best_mse, new_expr, new_vector = current_mse, current_expr, current_vector
     temp = float(params["start_temp"])
 
-    # Safety Check (No division by 0, log of a negative number, etc.)
+    # Safety Check (No division by 0, log of a negative number, etc.) at start
     if best_mse < float('inf'):
-        results.save_expr_data(iteration=0, mse=best_mse, expr=current_expr, coords=current_vector)
-        print(f"start: {current_expr}   mse: {best_mse}\n")
+        results.save_expr_data(iteration=0, mse=current_mse, expr=current_expr, coords=current_vector)
+        print(f"start: {current_expr}   mse: {current_mse}\n")
     else:
         if params["from_origin"]:
             raise ValueError("Invalid starting point. Restart the run with different independent values or set 'from_origin' to False.")
@@ -45,7 +44,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         # Taking random steps until there is a change in the decoded expression
         try:
             while str(new_expr) == str(current_expr):
-                delta = 0.4 * torch.randn(1,1,32)
+                delta = float(params["step_size"]) * torch.randn(1,1,32)
                 new_vector += delta
                 new_expr = model.decode(new_vector)[0]
         except RecursionError:
@@ -60,9 +59,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         if mse_delta <= 0 or np.exp(-mse_delta / temp) > np.random.rand(): # Accept change
             try:
                 results.save_expr_data(iteration=i, mse=new_mse, expr=new_expr, coords=new_vector)
-                current_mse = new_mse
-                current_expr = copy.deepcopy(new_expr)
-                current_vector = new_vector.clone()
+                current_mse, current_expr, current_vector = new_mse, new_expr, new_vector.clone()
             except RecursionError:
                 print(f"Recursion Limit: Stopped after {i} iterations.\n")
                 return results
@@ -72,9 +69,8 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
                 results.set_best(current_mse, current_expr, current_vector)
                 best_mse = current_mse
         else: # Reject change and go back to previous solution
-            new_vector = current_vector.clone()
-            new_expr = copy.deepcopy(current_expr)
-
+            new_expr, new_vector = current_expr, current_vector.clone()
+            
         # Applying the cooling function after specified cooling delay
         if i % int(params["cooling_delay"]) == 0:
             temp = cooling_function(temp, params["cooling_rate"])
@@ -86,6 +82,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
     else:
         print(f"Stopped after reaching max iterations ({int(params['max_iter'])}).\n")
     return results
+
 
 if __name__ == '__main__':
     parser = ArgumentParser(prog='SA Regression', description='Symbolic regression by minimizing the MSE through an SA search')
@@ -117,13 +114,13 @@ if __name__ == '__main__':
         "sqrt ( X )"
     ]
 
-    for i in range(4,len(ng_expressions)):
+    for i in range(len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
 
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
-        results_path = "../seeslab/sa_" + f"/nguyen{i}"
+        results_path = "../seeslab/sa_01" + f"/nguyen{i}"
         clean_folder(results_path)
         plots=[]
 

@@ -24,7 +24,7 @@ class RegressionData:
          
     
     def save_expr_data(self, iteration: int, mse: float, expr: Node, coords: torch.Tensor):
-        self.data[self.step]={"iteration": iteration, "error": mse, "expr": copy.deepcopy(expr), "coords": coords.clone()}
+        self.data[self.step]={"iteration": iteration, "error": mse, "expr": expr, "coords": coords.clone()}
         self.step += 1
     
     
@@ -37,7 +37,7 @@ class RegressionData:
 
 
     def set_best(self, best_mse: float, best_expr: Node, coords: torch.Tensor):
-        self.best = {"error": best_mse, "expr": copy.deepcopy(best_expr), "coords": coords.clone()}
+        self.best = {"error": best_mse, "expr": best_expr, "coords": coords.clone()}
 
     
     def plotData_steps_distToTrgt(self):
@@ -144,7 +144,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
 
     # Setting starting point
     best_vector, best_expr, best_mse = set_starting_point(model, evaluator, from_origin)
-    current_expr = copy.deepcopy(best_expr)
+    current_expr = best_expr
     eval_vector = best_vector.clone()
     
     # Safety Check (No division by 0, log of a negative number, etc.)
@@ -165,7 +165,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
             delta = 0.3 * torch.randn(1,1,32)
             eval_vector += delta
             current_expr = model.decode(eval_vector)[0]
-                
+        print(current_expr)
         # Evaluating expression and calculating mse
         current_mse = min(get_expr_mse(evaluator, current_expr))
         
@@ -173,12 +173,12 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
         if current_mse <= best_mse: # Accept and update best result
             results.save_expr_data(iteration=i, mse=current_mse, expr=current_expr, coords=eval_vector)
             best_mse = current_mse
-            best_expr = copy.deepcopy(current_expr)
+            best_expr = current_expr
             best_vector = eval_vector.clone()
             # print(f"accepted: {current_expr}   mse: {current_mse}\n")
         else: # Reject and go back to the best expression
             eval_vector = best_vector.clone()
-            current_expr = copy.deepcopy(best_expr)
+            current_expr = best_expr
         i += 1
 
     if best_mse <= tolerance:
@@ -218,13 +218,13 @@ if __name__ == '__main__':
         "sqrt ( X )"
     ]
     
-    for i in range(4, len(ng_expressions)):
+    for i in range(len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
         
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
-        results_path = "../seeslab/mse_ng_03" + f"/nguyen{i}"
+        results_path = "../seeslab/test_03" + f"/nguyen{i}"
         clean_folder(results_path)
         plots=[]
         
@@ -234,5 +234,4 @@ if __name__ == '__main__':
             reg_data.plot_all(results_path + f"/plots{i}")
             plots.append(reg_data.plots["plotData_steps_error"])
         
-        plot_avg(plots, results_path, "steps", "avg_error")
         overlap_plots(plots, results_path, "steps", "error")
