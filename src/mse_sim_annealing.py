@@ -74,6 +74,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         # Applying the cooling function after specified cooling delay
         if i % int(params["cooling_delay"]) == 0:
             temp = cooling_function(temp, params["cooling_rate"])
+            print(f"Progress: {i/params['max_iter']*100: .2f}%", end='\r')
         i += 1
 
     # Exit messages
@@ -114,7 +115,7 @@ if __name__ == '__main__':
         "sqrt ( X )"
     ]
 
-    for i in range(len(ng_expressions)):
+    for i in range(5,len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
 

@@ -5,9 +5,9 @@
         // Error tolerance for accepting a solution
         "tolerance": 1e-15,
         // Standard deviation of the distribution of random steps (recommend between 0.05 and 0.3)
-        "step_size": 0.3,
+        "step_size": 0.1,
         // Starting temperature for simulated annealing
-        "start_temp": 0.01,
+        "start_temp": 0.05,
         // Cooling rate (MUST be between 0 and 1)
         "cooling_rate": 0.975,
         // Amount of iterations between coolings

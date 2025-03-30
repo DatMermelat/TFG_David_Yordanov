@@ -165,7 +165,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
             delta = 0.3 * torch.randn(1,1,32)
             eval_vector += delta
             current_expr = model.decode(eval_vector)[0]
-        print(current_expr)
+            
         # Evaluating expression and calculating mse
         current_mse = min(get_expr_mse(evaluator, current_expr))
         
@@ -179,13 +179,16 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
         else: # Reject and go back to the best expression
             eval_vector = best_vector.clone()
             current_expr = best_expr
-        i += 1
 
+        # Print progress
+        if i % 1000 == 0:
+            print(f"Progress: {i/max_iter*100: .1f}%", end='\r')
+        i += 1
+        
     if best_mse <= tolerance:
         print(f"MSE converged to tolerance {tolerance} in {results.steps()} steps over {i-1} iterations.\n")
     else:
         print(f"Stopped after reaching max iterations ({max_iter}).\n")
-
     return results
 
 
