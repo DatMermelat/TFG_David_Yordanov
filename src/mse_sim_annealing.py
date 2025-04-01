@@ -70,7 +70,7 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
                 best_mse = current_mse
         else: # Reject change and go back to previous solution
             new_expr, new_vector = current_expr, current_vector.clone()
-            
+
         # Applying the cooling function after specified cooling delay
         if i % int(params["cooling_delay"]) == 0:
             temp = cooling_function(temp, params["cooling_rate"])
@@ -115,13 +115,13 @@ if __name__ == '__main__':
         "sqrt ( X )"
     ]
 
-    for i in range(5,len(ng_expressions)):
+    for i in range(0,len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
 
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
-        results_path = "../seeslab/sa_01" + f"/nguyen{i}"
+        results_path = "../seeslab/sa_test" + f"/nguyen{i}"
         clean_folder(results_path)
         plots=[]
 
