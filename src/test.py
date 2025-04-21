@@ -6,9 +6,8 @@ import torch
 import os
 
 from model import HVAE
-from hvae_utils import load_config_file, tokens_to_tree
+from hvae_utils import load_config_file, tokens_to_tree, create_batch
 from symbol_library import generate_symbol_library
-from seeslab_utils import expr_is_unique, torch_to_coords, expr_complexity, clean_folder
 from evaluation import RustEval
 from tree import Node
 
@@ -26,11 +25,11 @@ if __name__ == '__main__':
     HVAE.add_symbols(sy_lib)
 
     model = torch.load(training_config["param_path"], weights_only = False)
-    str_expr = "sin ( X ^2 ) * cos ( X ) - 1"
-    tokens_expr = str_expr.split(" ")
-    print(tokens_expr)
+
+    str_expr = "X ^2 + C ^3 + 1"
+    tokens_expr = str_expr.split()
     treeA = tokens_to_tree(tokens_expr, so)
-    treeB = treeA
-    treeA = model.decode(torch.randn(1,1,32))[0]
-    print(treeA)
-    print(treeB)
+    BtreeA = create_batch([treeA])
+    vector = model.encode(BtreeA)[0]
+    decoded_expr = model.decode(vector)[0]
+    print(decoded_expr)

@@ -1,5 +1,4 @@
 from argparse import ArgumentParser
-from typing import Dict, Any
 
 import numpy as np
 import torch
@@ -9,29 +8,29 @@ import copy
 from model import HVAE
 from hvae_utils import load_config_file, tokens_to_tree
 from symbol_library import generate_symbol_library
-from seeslab_utils import distance, clean_folder 
+from seeslab_utils import distance, clean_folder
 from plot_utils import plotData_plot, overlap_plots, plot_avg
 from evaluation import RustEval
 from tree import Node
 
 class RegressionData:
-    
+
     def __init__(self):
         self.data = {}
         self.best = None
         self.plots = {}
         self.step = 0
-         
-    
+
+
     def save_expr_data(self, iteration: int, mse: float, expr: Node, coords: torch.Tensor):
         self.data[self.step]={"iteration": iteration, "error": mse, "expr": expr, "coords": coords.clone()}
         self.step += 1
-    
-    
+
+
     def save_target(self, expr: Node, coords: torch.Tensor):
         self.data["target"]={"expr": expr, "coords": coords}
-    
-    
+
+
     def steps(self):
         return self.step
 
@@ -39,7 +38,7 @@ class RegressionData:
     def set_best(self, best_mse: float, best_expr: Node, coords: torch.Tensor):
         self.best = {"error": best_mse, "expr": best_expr, "coords": coords.clone()}
 
-    
+
     def plotData_steps_distToTrgt(self):
         """
         Generates a list of (step, distance_to_target) tuples
@@ -49,17 +48,17 @@ class RegressionData:
         ]
         self.plots["plotData_steps_distToTrgt"] = points
 
-    
+
     def plotData_distToTrgt_error(self):
         """
-        Generates a list of (mean_squared_error, distance_to_target) tuples 
+        Generates a list of (mean_squared_error, distance_to_target) tuples
         """
         points = [
             (distance(self.data[step]["coords"], self.data["target"]["coords"]), self.data[step]["error"]) for step in self.data if step != "target"
         ]
         self.plots["plotData_distToTrgt_error"] = points
 
-    
+
     def plotData_steps_error(self):
         """
         Generates a list of (step, mean_squared_error) tuples
@@ -67,14 +66,14 @@ class RegressionData:
         points = [(self.data[step]["iteration"], self.data[step]["error"]) for step in self.data if step != "target"]
         self.plots["plotData_steps_error"] = points
 
-    
+
     def plot_all(self, path: str):
         self.plotData_steps_error()
         # self.plotData_distToTrgt_error()
         # self.plotData_steps_distToTrgt()
         plotData_plot(self.plots, path)
-        
-    
+
+
     def to_txt(self, path, show_coords=False):
         with open(path,'w') as file:
             for step in self.data:
@@ -82,8 +81,8 @@ class RegressionData:
                     text = f"{step} || {self.data[step]['iteration']} || {self.data[step]['error']} || {str(self.data[step]['expr'])}"
                     if show_coords:
                         coords = self.data[step]['coords'].flatten().tolist()
-                        file.write(text + f" || {coords}\n")  
-                    else: 
+                        file.write(text + f" || {coords}\n")
+                    else:
                         file.write(text + "\n")
             # Writing best solution
             if self.best is not None:
@@ -111,7 +110,7 @@ def generate_data(model, expr=None, indep_values: list=None, std_dev: float=1.0)
     '''
     if indep_values is None:
         indep_values = np.linspace(1,10, num=1000)
-    
+
     target = None
     coords = None
     if expr is None:
@@ -125,7 +124,7 @@ def generate_data(model, expr=None, indep_values: list=None, std_dev: float=1.0)
         target = evaluator.evaluate(expr.to_list("postfix"))
         if target is None:
             raise ValueError("Selected target is not defined for the entire domain of independent values.")
-    
+
     data = np.array([indep_values,target[0]])
     print(f"Target expression: {expr}\n")
     return expr, data, coords
@@ -146,7 +145,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
     best_vector, best_expr, best_mse = set_starting_point(model, evaluator, from_origin)
     current_expr = best_expr
     eval_vector = best_vector.clone()
-    
+
     # Safety Check (No division by 0, log of a negative number, etc.)
     if best_mse < float('inf'):
         results.save_expr_data(iteration=0, mse=best_mse, expr=best_expr, coords=best_vector)
@@ -156,7 +155,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
             raise ValueError("Invalid starting point. Restart the run with different independent values or set 'from_origin' to False.")
         else:
             raise ValueError("Invalid starting point. Restart run.")
-        
+
     # Regression
     i = 1
     while best_mse > tolerance and i <= max_iter:
@@ -165,10 +164,10 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
             delta = 0.3 * torch.randn(1,1,32)
             eval_vector += delta
             current_expr = model.decode(eval_vector)[0]
-            
+
         # Evaluating expression and calculating mse
         current_mse = min(get_expr_mse(evaluator, current_expr))
-        
+
         # Checking if the change is acceptable
         if current_mse <= best_mse: # Accept and update best result
             results.save_expr_data(iteration=i, mse=current_mse, expr=current_expr, coords=eval_vector)
@@ -184,7 +183,7 @@ def mse_regression(model, data: np.array, tolerance = 1e-15, max_iter: int=10000
         if i % 1000 == 0:
             print(f"Progress: {i/max_iter*100: .1f}%", end='\r')
         i += 1
-        
+
     if best_mse <= tolerance:
         print(f"MSE converged to tolerance {tolerance} in {results.steps()} steps over {i-1} iterations.\n")
     else:
@@ -199,7 +198,7 @@ if __name__ == '__main__':
     parser.add_argument("-targets", default=1)
 
     args = parser.parse_args()
-    
+
     config = load_config_file(args.config)
     expr_config = config["expression_definition"]
     es_config = config["expression_set_generation"]
@@ -207,7 +206,7 @@ if __name__ == '__main__':
     sy_lib = generate_symbol_library(expr_config["num_variables"], expr_config["symbols"], expr_config["has_constants"])
     so = {s["symbol"]: s for s in sy_lib}
     HVAE.add_symbols(sy_lib)
-    
+
     model = torch.load(training_config["param_path"], weights_only=False)
 
     ng_expressions = [
@@ -220,21 +219,17 @@ if __name__ == '__main__':
         "log ( X + 1 ) + log ( X ^2 + 1 )",
         "sqrt ( X )"
     ]
-    
+
     for i in range(len(ng_expressions)):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
-        
+
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
         results_path = "../seeslab/test_03" + f"/nguyen{i}"
         clean_folder(results_path)
-        plots=[]
-        
+
         for i in range(int(args.runs)):
             reg_data = mse_regression(model, data, max_iter=int(1e6), from_origin=True)
             reg_data.to_txt(results_path + f"/mse_run{i}.txt")
             reg_data.plot_all(results_path + f"/plots{i}")
-            plots.append(reg_data.plots["plotData_steps_error"])
-        
-        overlap_plots(plots, results_path, "steps", "error")

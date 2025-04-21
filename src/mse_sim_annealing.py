@@ -123,12 +123,8 @@ if __name__ == '__main__':
         target, data, coords = generate_data(model, expr_tree)
         results_path = "../seeslab/sa_test" + f"/nguyen{i}"
         clean_folder(results_path)
-        plots=[]
 
         for i in range(int(args.runs)):
             reg_data = mse_sim_annealing(model, data, params)
             reg_data.to_txt(results_path + f"/mse_run{i}.txt")
             reg_data.plot_all(results_path + f"/plots{i}")
-            plots.append(reg_data.plots["plotData_steps_error"])
-
-        overlap_plots(plots, results_path, "steps", "error")

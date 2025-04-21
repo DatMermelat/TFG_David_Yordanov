@@ -21,12 +21,18 @@ def generate_symbol_library(num_vars, symbol_list, has_constant=True):
         "cos": {"symbol": 'cos', "type": SymType.Fun, "precedence": 5, "psymbol": "cos"},
         "exp": {"symbol": 'exp', "type": SymType.Fun, "precedence": 5, "psymbol": "exp"},
         "log": {"symbol": 'log', "type": SymType.Fun, "precedence": 5, "psymbol": "log"},
+        "sinh": {"symbol": 'sinh', "type": SymType.Fun, "precedence": 5, "psymbol": "sinh"},
+        "cosh": {"symbol": 'cosh', "type": SymType.Fun, "precedence": 5, "psymbol": "cosh"},
+        "abs": {"symbol": 'abs', "type": SymType.Fun, "precedence": 5, "psymbol": "abs"},
         "^2": {"symbol": '^2', "type": SymType.Fun, "precedence": -1, "psymbol": "n2"},
         "^3": {"symbol": '^3', "type": SymType.Fun, "precedence": -1, "psymbol": "n3"},
         "^4": {"symbol": '^4', "type": SymType.Fun, "precedence": -1, "psymbol": "n4"},
         "^5": {"symbol": '^5', "type": SymType.Fun, "precedence": -1, "psymbol": "n5"},
-        "^6": {"symbol": '^6', "type": SymType.Fun, "precedence": -1, "psymbol": "n6"},
-        "1": {"symbol": '1', "type": SymType.Const, "precedence": 5, "psymbol": "1"}
+        "1": {"symbol": '1', "type": SymType.Const, "precedence": 5, "psymbol": "1"},
+        "2": {"symbol": '2', "type": SymType.Const, "precedence": 5, "psymbol": "2"},
+        "3": {"symbol": '3', "type": SymType.Const, "precedence": 5, "psymbol": "3"},
+        "4": {"symbol": '4', "type": SymType.Const, "precedence": 5, "psymbol": "4"},
+        "5": {"symbol": '5', "type": SymType.Const, "precedence": 5, "psymbol": "5"}
     }
     variable_names = 'XYZABDEFGHIJKLMNOPQRSTUVWČŠŽ'
     symbols = []

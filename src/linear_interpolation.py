@@ -10,7 +10,6 @@ from symbol_library import generate_symbol_library
 def interpolateAB(model, treeA, treeB, steps=5):
     treeBA = create_batch([treeA])
     treeBB = create_batch([treeB])
-    print(treeBA)
     l1 = model.encode(treeBA)[0]
     l2 = model.encode(treeBB)[0]
     print(f"Expr A:\t{str(treeA)}")
@@ -36,7 +35,7 @@ if __name__ == '__main__':
     so = {s["symbol"]: s for s in sy_lib}
     HVAE.add_symbols(sy_lib)
 
-    model = torch.load(training_config["param_path"])
+    model = torch.load(training_config["param_path"], weights_only=False)
 
     # Expressions we want to interpolate between
     exprA = "cos ( X * X + X ) + exp ( X ) / X"
