@@ -34,7 +34,7 @@ def generate_symbol_library(num_vars, symbol_list, has_constant=True):
         "4": {"symbol": '4', "type": SymType.Const, "precedence": 5, "psymbol": "4"},
         "5": {"symbol": '5', "type": SymType.Const, "precedence": 5, "psymbol": "5"}
     }
-    variable_names = 'XYZABDEFGHIJKLMNOPQRSTUVWČŠŽ'
+    variable_names = 'ABDEFGHIJKLMNOPQRSTUVWČŠŽ'
     symbols = []
     for i in range(num_vars):
         if i < len(variable_names):

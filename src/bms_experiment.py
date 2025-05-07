@@ -20,14 +20,17 @@ class ReconstExperiment:
     self.total_tries = 0
     self.total_succesful = 0
 
-  def save_result(self, expression: str, is_successful: bool):
+  def save_result(self, expression: str, decoded_expression: str, is_successful: bool):
     """
     Saves the result of the experiment.
     """
     if expression not in self.results:
-      self.results[expression] = {"tries": 1, "n_successful": 1 if is_successful else 0}
+      self.results[expression] = {"tries": 1,
+                                  "n_successful": 1 if is_successful else 0,
+                                  "decodings": {decoded_expression}}
     else:
       self.results[expression]["tries"] += 1
+      self.results[expression]["decodings"].add(decoded_expression)
       if is_successful:
         self.results[expression]["n_successful"] += 1
 
@@ -48,10 +51,11 @@ class ReconstExperiment:
         self.total_tries += 1
 
         # Check if successful
-        if decoded_expression == expression:
-          self.save_result(expression, is_successful=True)
+        if decoded_expression == expression.replace(" ", ""):
+          self.save_result(expression, decoded_expression, is_successful=True)
+          self.total_succesful += 1
         else:
-          self.save_result(expression, is_successful=False)
+          self.save_result(expression, decoded_expression, is_successful=False)
 
   def to_txt(self, path: str):
     with open(path, 'w') as file:
@@ -84,6 +88,7 @@ if __name__ == '__main__':
     for line in file:
       expressions.append(line.strip())
 
+  import pdb; pdb.set_trace()
   experiment = ReconstExperiment(model, expressions, so)
   experiment.run()
   experiment.to_txt(os.path.join("../seeslab/bms_experiment", "results" + dataset))
