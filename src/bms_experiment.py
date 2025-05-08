@@ -61,7 +61,7 @@ class ReconstExperiment:
     with open(path, 'w') as file:
       file.write("success_rate: " + str(self.total_succesful / self.total_tries) + "\n")
       for expr, result in self.results.items():
-        file.write(f"{expr} || {result['tries']} || {result['n_successful']/result['tries']}\n")
+        file.write(f"{expr.strip()} || {result['tries']} || {result['n_successful']/result['tries']} || {result['decodings']}\n")
 
 
 if __name__ == '__main__':
@@ -81,14 +81,13 @@ if __name__ == '__main__':
   model = torch.load(training_config["param_path"], weights_only=False)
 
   dataset = "_3.39_x__3 + 2.12_x__2 + 1.78_x_.txt"
-  dataset_path = os.path.join("../seeslab/bms_datasets", dataset)
+  dataset_path = os.path.join("../seeslab/bms_experiment/bms_datasets", dataset)
 
   expressions = []
   with open(dataset_path, 'r') as file:
     for line in file:
       expressions.append(line.strip())
 
-  import pdb; pdb.set_trace()
   experiment = ReconstExperiment(model, expressions, so)
   experiment.run()
   experiment.to_txt(os.path.join("../seeslab/bms_experiment", "results" + dataset))
