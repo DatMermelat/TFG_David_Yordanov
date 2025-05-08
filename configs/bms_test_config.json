@@ -18,7 +18,7 @@
   },
   "training": {
     // Number of epochs the model trains for
-    "epochs": 2,
+    "epochs": 20,
     "batch_size": 32,
     "verbose": true,
     // Dimensionality of the latent space
