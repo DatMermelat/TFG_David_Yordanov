@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     model = torch.load(training_config["param_path"], weights_only = False)
 
-    str_expr = "X ^2 + C ^3 + 1"
+    str_expr = "X ^2 + X ^3"
     tokens_expr = str_expr.split()
     treeA = tokens_to_tree(tokens_expr, so)
     BtreeA = create_batch([treeA])

@@ -19,10 +19,6 @@ def torch_to_coords(tensor: torch.Tensor) -> list:
     return tensor.flatten().tolist()
 
 
-def expr_is_unique (expr: str, data: Dict[str, Any]) -> bool:
-    return not any(unique_expr == expr for unique_expr in data["unique_expressions"])
-
-
 def expr_complexity (expr: str) -> int:
     symbols = ["+", "-", "*", "/", "^", "sin", "cos", "exp", "sqrt", "log"]
     complexity = 0
@@ -32,7 +28,7 @@ def expr_complexity (expr: str) -> int:
             complexity += expr.count(symbol)
         else:  # Multi-character function
             complexity += len(re.findall(rf"\b{symbol}\b", expr))
-    
+
     return complexity
 
 

@@ -7,8 +7,13 @@ import os
 from model import HVAE
 from hvae_utils import tokens_to_tree, load_config_file, create_batch
 from symbol_library import generate_symbol_library
-from seeslab_utils import expr_is_unique, torch_to_coords, expr_complexity, clean_folder
+from seeslab_utils import torch_to_coords, expr_complexity, clean_folder
 from plot_utils import plotData_plot, plot_avg, overlap_hists
+
+
+def expr_is_unique (expr: str, walk_data: dict) -> bool:
+    return not any(unique_expr == expr for unique_expr in walk_data["unique_expressions"])
+
 
 # Plot data naming convention: plotData_xValues_yValues
 # x: number of steps, y: number of unique expressions
@@ -47,7 +52,7 @@ def histData_visits(walk_data):
     walk_data["histData_visits"] = data
 
 
-def save_step_data (step_data: Dict[str, Any], walk_data: Dict[str, Any]):
+def save_step_data (step_data: dict, walk_data):
     # Saving the step data in the walk dictionary
     walk_data["step_data"].append(step_data)
 
@@ -63,7 +68,7 @@ def save_step_data (step_data: Dict[str, Any], walk_data: Dict[str, Any]):
     expressions[expr]["visits"] += step_data["steps_no_change"] + 1
 
 
-def walk_to_txt (path: str, walk_data: Dict[str, Any]):
+def walk_to_txt (path: str, walk_data: dict):
     with open (path, 'w') as file:
         file.write(f"steps: {walk_data['steps']}\n")
         file.write(f"rand_range: {walk_data['rand_range']}\n\n")
@@ -73,7 +78,7 @@ def walk_to_txt (path: str, walk_data: Dict[str, Any]):
             file.write(f"{step_data['expression']} || {step_data['steps_no_change']} || {step_data['change_distance']} || {step_data['total_distance']} || {step_data['norm']} || {step_data['is_unique']} || {step_data['coords']}\n")
 
 
-def random_walk(model, steps = 100) -> Dict[str, Any]:
+def random_walk(model, steps = 100) -> dict:
     # Range for the generation of the random change in the vector
     a = 0.05
     b = -a

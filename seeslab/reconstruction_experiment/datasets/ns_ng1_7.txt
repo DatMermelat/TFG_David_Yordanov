@@ -1,0 +1,1000 @@
+( X - X ) ^4 + X / sqrt ( X / X )
+X * X ^4 + log ( X + X ) / ( X * X )
+( X - X * ( X - X ) ) * X
+( ( ( X * X ) ^2 + X ) + X ) ^3
+X ^4 * X
+X
+sin ( ( X / X ) / X ) * X
+( ( X / X ^5 ) * X ) * X
+( ( X ^2 ) ^5 - ( X * X ) * X ) - X
+sqrt ( X + X ) / ( X * X ) ^5
+X / X - ( ( ( X * X ) * X ) / X ) * X
+X ^3 / X
+( X - ( exp ( X ) ) ^2 ) ^2 * X
+X * X - X
+( X - X ) ^3
+( ( X * X - X ) ^4 + X ^5 ) - X
+( cos ( ( X + X ) ^2 ) ) ^2
+sqrt ( X / X ) - ( ( X / X ) * X ) * X
+sqrt ( X * X ) * X - X
+( exp ( X ^2 ) ) ^2
+X - ( ( X * X ) * X ) / X ^2
+( ( X / X ) / sin ( X ) ) ^3 * sin ( X )
+( ( ( X / X ) / X ) ^2 ) ^4 + X ^2
+log ( ( X / X ) ^3 ) + X
+( ( X / X ) * sqrt ( X ) ) * sin ( X / X )
+X * X ^2 - X
+( ( ( X / X ) / X ) * X ) ^2
+( X - X ) ^2 + ( X - X ) * X
+( X * X ) * X + X
+cos ( X ) / ( X * X - X ) ^2 + cos ( X / X )
+( ( ( X - X ) + X ) + X ) - X
+sin ( X ) * X - X * X ^4
+sin ( X - X ) / ( ( X * X ) / X )
+( X * X + X / X ) + X
+( X * X ) / X + X
+X * X ^5 - ( X * X ) ^5 * X
+( X - X ) / ( sqrt ( X ) * X ) ^2
+sqrt ( ( X / X ) / X ) * X - X
+( ( X / X ) ^5 - ( exp ( X ) ) ^3 ) * X
+( X ^4 ) ^2
+( X - X ) - X
+( X / ( X / X ) ) ^3
+log ( X ) + X * X
+sin ( X ) * X ^3 - X
+cos ( X ) + ( ( X / X ) * X ) * X
+( ( X + X ) - X ) + X
+( exp ( X ) * ( ( X * X ) / X ) ) * X ^5
+( ( X / X ) / X ^2 ) * X
+( ( X * X ) / X ) / ( X / log ( X ) + X )
+( X / ( ( ( X / X ) / X ) / X ) ) / X
+sqrt ( X ) * X
+X * X + ( ( X * X ) * sin ( X ) ) ^3
+X ^4 - ( X + X ^3 ) ^4
+exp ( cos ( ( X - X ) + X ) )
+cos ( ( X / X - X ) + X ) - X
+X * ( X - X ) ^3 + X
+X * X + ( log ( X ) ) ^3
+( ( X - X ) + X * X ) ^4 + X
+( ( X - X * X ) ^2 - X ^3 ) ^5
+( X * X ) * X + X ^3
+( ( X - X * X ) * X ) ^4
+X * X + ( X / X ) ^2 * X
+cos ( X + X / X ) - sqrt ( X + X )
+( X ^4 + X ) + X
+cos ( ( ( ( X / X ) / X ) * X ) / X ) - exp ( X )
+sqrt ( ( log ( ( X / X ) / X ) - X ) - X )
+( ( ( X * X ) ^4 ) ^2 - ( ( X * X ) / X ) * X ) - X
+X / ( log ( X + X ) + X / X )
+( ( X / X ) * X + X * X ) + X * X
+log ( cos ( exp ( X + X ^2 ) ) )
+sqrt ( X + X ) + X
+( ( X * X ) * X ^2 ) / X - ( X - X )
+X * X
+( X * X - ( X * X ) / X ) + X
+( X * exp ( X / X ) ) ^2
+X - ( X * X ) ^2
+( X - ( ( X / X ) / X ) / X ^2 ) - sqrt ( X )
+sqrt ( X ) / X
+exp ( X + X ) - X
+X / ( X * cos ( X ) - X ) ^5
+sin ( ( X * X ) ^5 ) + ( ( X / X ) * X ) * X
+X / X + X
+( X / X - X * X ) * X - X
+( X - X * X ) - X / X ^2
+X / X
+( exp ( X ) + ( X * X ) * X ) ^3
+exp ( X ) / X ^2
+X + ( X ^2 * X ) / X
+( X ^2 - X ^2 ) ^2
+( cos ( X - X ^2 ) - exp ( X ) ) / X
+X * ( ( X * X ) * X ) ^2
+( X / X ^5 ) * sqrt ( X )
+log ( X ) * sqrt ( X )
+log ( X ) / ( ( X * cos ( X ) ) ^4 * X )
+X * X + X
+( X / X + X ) - X
+( ( X * X ) / cos ( X ) ) / cos ( log ( X * X ) )
+exp ( ( X - X ) ^5 ) / sqrt ( X * X )
+( ( X / X ) * X ) / sqrt ( X )
+log ( X / X ) * X
+X / X ^3 - X ^3
+X * X - cos ( X )
+X ^4 + X
+( X + X ) ^3 + ( X / X ) * X
+X * cos ( X / X )
+X - ( ( X / X ) / X ) * X
+( X - X * X ) * ( ( X + X * X ) * X - X )
+cos ( X / X )
+( X * X ) / X
+X * X + ( X * X ) ^5
+( ( ( X - X ) + X ) - X ) / X
+( X / X - log ( X ) ) - X
+( ( X / X ) ^5 ) ^2 / sqrt ( X * X )
+X * ( ( ( ( X / X ) / X ^3 ) * X ) / X )
+X * log ( X ^4 ) + X
+( X ^3 * X ) ^2
+cos ( X / X ) - X * sin ( X )
+X / ( ( X / X ) / X ) ^2 - X / X
+sqrt ( ( X ^2 + X ) - X )
+log ( X - cos ( X ) / X )
+( ( X * X ) ^3 / X ^3 ) ^2
+sin ( sqrt ( exp ( X ) - X ) )
+X + ( ( X / X ) / X ) / X ^4
+X ^2 - X
+X - X * X
+( X * ( X * X + X ) ^2 ) ^5
+( X / X ) / X
+( ( X / X ) / X ) * sqrt ( X )
+( ( X + X / X ) - X ) - ( X + X ) ^4
+( X * X - X ) ^3 + X / X
+X * ( X * X + X ^2 )
+log ( ( X * X ) * X ) * ( X / X ^4 ) ^2
+( X / X ) / X
+X * ( X + X ) ^2 - exp ( X + X )
+( X * X + X ^4 * X ) ^2
+( X / ( X / X ) + X ) + X
+X / X
+log ( X ) - cos ( ( X / X ) ^4 )
+X * ( X / X ) - ( X * X ) / X
+sin ( cos ( X ^2 ) )
+( ( sin ( X ) * X ) * X ) / X
+exp ( sqrt ( X ) ) - ( X ^2 * X ^2 ) * X
+X - ( X / X ) / X
+exp ( X - X ^4 ) / sqrt ( X )
+( ( X - X ) + X ^4 ) + ( X / X ) * X
+( ( X * X ) * cos ( X * X ) ) / ( cos ( X * X ) - log ( X ) )
+exp ( cos ( cos ( X ) ) )
+( X - X / X ) ^4 + cos ( X / X )
+cos ( cos ( X ) )
+( X + X ^4 ) + ( X * X ) * X
+( ( ( X - X / X ) ^4 + X ) ^3 ) ^5
+X * cos ( X / X ) - log ( ( ( X * X ) * X ) / X - X )
+( ( X + X ) * X ) / ( X / X )
+sin ( ( X + X ) + X / X )
+exp ( X / cos ( X ) )
+log ( exp ( X ) - X )
+sin ( X ) * ( X * X ) ^3
+X / ( X ^3 ) ^3
+log ( ( ( ( ( X / X ) * X ) / X ) * X ) / exp ( X ) )
+exp ( X ) / X + X
+( ( X - X ) / X ) / ( X / X - X )
+X
+X ^3 / X
+( ( ( X / exp ( X ) ) ^2 ) ^2 ) ^2
+X - ( ( X / ( X / X ) ) * X ) * X ^4
+X / ( ( X * sin ( X ) ) * X )
+( ( X * X ) * X ) * X + ( X / X ) / X
+X ^4 + X
+( X - X ) * log ( X * X )
+( X ^3 / X ) * X - X * X
+( ( X + ( X * X ) / X ) ^2 + X ) + X
+( ( ( ( ( X / X ) * X ) * X ) * X + X ^2 ) ^3 ) ^4
+X - ( X * X ) * X
+( ( ( X * X ) * X ) * exp ( cos ( X * X ) ) ) / X
+( ( X / X ) / X ) / X
+X - X ^4 / X
+X - sin ( X ^4 / X )
+X ^4 / X
+( X * X ) * X + sqrt ( ( X * X ) * X )
+X - sqrt ( X ^2 / X + X )
+( ( X - X * X ) * ( X - X * X ) ^2 ) / X
+X * X + ( X / X ) / X
+X / X - X ^5
+log ( ( X * X ) * X - X ) + X
+( ( X + X ) - log ( X ) ) * X
+X / X ^4 + X
+sin ( ( ( X / X ) / X ) * X )
+X / X - X
+X / X ^5 - X / X
+X - log ( cos ( X + X ) - X )
+X ^3 * X ^3 + ( X / X ) * ( ( X / X - X ) / X )
+X * X + X
+X / X ^4 - X / X
+exp ( sin ( X / X + X ) )
+sin ( ( ( X * X ) * X ) * X )
+X
+( sin ( X ) / X ^4 ) / X
+( X + X ) ^4 - X
+cos ( exp ( X ) * X )
+log ( X - X ) - ( ( X - X / X ) ^3 ) ^4
+( X * X ) / X + X
+sin ( X / ( X - X ) )
+( ( X / X ) * X + ( X * X ) ^4 ) - exp ( X )
+( ( X * X ^5 ) * X ) ^3
+sin ( ( X / X ) ^2 ) + sin ( ( X / X ) ^2 ) * X
+( ( X - X ) + X ) ^4
+( ( X * X ) * X ) * cos ( X ) - X
+sin ( ( X / X ^2 ) / sin ( X ) )
+sqrt ( ( X * X ) * sqrt ( X ) )
+( X + X / X ) ^2
+sin ( X / ( X + X ) )
+( X / X ) / X
+( X * X ) ^3 / ( X * X + X ) ^2
+sin ( ( X + X ^2 ) ^3 + X )
+log ( cos ( X * X ) ) / X
+exp ( ( X * X ^2 ) * X + X )
+( X - ( ( X * X ) / X ) ^3 / X ) + X
+sqrt ( ( X * sqrt ( X ) - X ) + X )
+( X / X ) * X + X * X
+sin ( ( X * X ) / X )
+( ( X ^2 / X ) * X - X ) ^3
+cos ( X + X * X )
+X * X + X
+( X + exp ( cos ( X ) ) ) - X
+sqrt ( X - X * X )
+( X * X ) ^4 / X ^2
+( X - X ) ^4 + X
+( X / ( ( X * X ) * X ) ^4 ) ^3
+( ( X / X ^2 ) * X ) * X
+cos ( ( ( X / X ) / X ) / X )
+( X * X - X ) + X
+( ( ( ( X * X ) * X ) * X ) / X ) * ( X * X )
+cos ( X * X ) / exp ( X * X )
+X / ( X * X ^3 )
+( ( X / X ) / X ) * log ( X ) + X * ( X - X ) ^2
+( cos ( X ) ) ^4 - X
+( X / X ) / X ^5
+sqrt ( X * X ^5 )
+cos ( cos ( X ) ) / cos ( cos ( cos ( X ) ) )
+cos ( ( X * X ) / X + ( X / X - X ) )
+sqrt ( ( ( ( ( X * X ) * X ) / X ) / X ) * cos ( X ) )
+sqrt ( X ^2 ) + X * sin ( X )
+X - X / X
+X + X ^5 / X
+X * X + X ^3
+log ( ( X * ( X * X ) ) * sin ( X - X * X ) )
+X / ( ( X * X ) * X ) - X
+( ( X / X ) * X ^3 ) * X
+( X * X - sqrt ( X ) ) + X
+sqrt ( X * ( X / X ) ^2 )
+log ( X ^2 - X )
+X - exp ( ( ( X / X ) * X ) * X )
+( ( ( X / X ) / X ) * X ) ^5
+( sqrt ( sin ( sin ( X ) ) ) ) ^3
+X + ( sqrt ( ( X - X ) ^2 ) ) ^2
+sqrt ( X ) / ( X - X ) + X
+log ( ( X + X ) + X ) - cos ( X / X + ( X / X ) * X )
+exp ( sin ( X ) + X / X )
+X ^3 + X / X
+( ( X * X - X ) ^3 * X ) * X
+X - ( X / X ) ^5 * ( X / X )
+exp ( ( ( X * X ) * X ) * X )
+( X ^4 * cos ( X ) ) ^2
+( X ^4 ) ^5
+X
+X ^4 / X
+( X * X ) / ( cos ( X / X ) * sqrt ( X ) )
+log ( exp ( X * X ) ) / ( ( X / X ) * X )
+sin ( ( X * X ) ^2 ) - ( ( X / X ) * X ) * X
+X ^3 * X ^2
+X ^3 / X
+( X ^5 / X ) / X - ( ( X / X ) * X ) ^3
+( X / X ) ^3
+exp ( ( ( X * X ) / X ) * sqrt ( X ) )
+log ( ( X + X ) ^3 ) - log ( X )
+log ( X - X / X ) + ( ( X / X ) / X - X / X ) * X ^3
+( ( X / X ) * X + X ) - sqrt ( X / X )
+( X ^3 + X ) / X
+X / X ^2 - X
+( X * X ^3 ) * X
+log ( sqrt ( ( X / X - X ) - X ) )
+X
+cos ( ( X + X ) - X ) / exp ( X ) + cos ( X / cos ( X ) )
+( X ^3 + X ^2 ) ^5
+( ( X - X ) + X * X ) ^5
+X - ( ( X / X ) * X ^5 ) * exp ( X )
+sqrt ( X ) / ( ( ( X / X ) * X ) / X )
+log ( X / X ) * X ^2
+( ( X + X ) - X ) ^3 / X
+X - ( cos ( X ) * X ^2 ) * X
+( X / X ) * ( ( X * X ) * X )
+( exp ( X - X ) ) ^5
+sin ( X ) * sqrt ( X )
+X / ( X / X ) ^2 + X / X
+X / X + ( ( X / X ) * X ) * X
+exp ( X / X ) / X
+( X * log ( X ) ) * X
+( X ^3 - X ) + sin ( X / X )
+sin ( ( X / X ) * X ) / sin ( X )
+( exp ( X ) - X ) - X
+sqrt ( X ) / X - exp ( X )
+X ^3 / cos ( X * X + X )
+cos ( exp ( ( X - X ) - X ) * ( X + X ) )
+( ( X + X ) - X ) + X ^2
+( ( X ^5 ) ^2 - X ) - X / X ^3
+( X - cos ( X - X ) ) - ( X - X )
+sqrt ( X * X - X / X )
+cos ( X ) - sin ( sqrt ( X - X ) / X )
+( log ( ( X / X ) / X ) - X ) * sin ( X )
+sqrt ( ( sqrt ( X / X ) ) ^5 + X )
+X / X - X ^4
+( X - X ) + ( X * X ) * X ^3
+( X * X ) ^5 * ( X + X ) ^2 + X
+sin ( X ) - sin ( X ) * X
+( exp ( exp ( X * X ) ) ) ^2
+( X * X ) / sqrt ( X + X ) + X / X
+sqrt ( X * X ) + X
+( ( X * X ) * X ) / X ^2 - log ( exp ( X * X ) / X ^2 )
+X + cos ( ( sin ( ( X * X ) / X ) ) ^3 )
+( X + X / X ) - ( X / X + X ) ^4
+( X / X ) ^3 / X ^5 - X * X
+X ^4 - ( ( X / X ) * X ) * X
+( X * X ) ^2
+( X * X ^2 ) / ( X - X )
+X + ( ( X * X ) ^2 * X ) ^2
+sqrt ( cos ( exp ( X ) + X ) + X )
+( sin ( ( ( X * X ) / X ) / X ) ) ^3 / X
+( X / X - X ) ^2
+sin ( X ^5 ) / X
+X * exp ( X / X - X / X )
+X * X ^3 + ( X * X ^3 ) * sqrt ( X )
+X / X + ( X / X ) ^4
+sin ( ( sqrt ( X ) ) ^3 )
+( ( ( X / X ) * X ^5 ) / X ) / X
+X / X - cos ( ( exp ( X ) ) ^5 )
+log ( X ) * X - sqrt ( X / sin ( X ) )
+X * X - X * X
+( X ^2 / X - X * X ) + X
+( X - sin ( X ) * X ) - X
+X ^2 / log ( X )
+X / ( X * sin ( X ) - sin ( X ) )
+( ( X * X ) * X ) ^3 * X + X / sqrt ( X )
+sqrt ( ( ( X - X ) - X ) + X )
+( ( X / X ^5 ) / X ) / ( X ^2 / X )
+( X / exp ( X ) ) ^4
+X
+X + ( X * X ^3 ) ^3
+( ( exp ( X ) - exp ( X * X ) ) - X ) + X / X
+( ( X / X ) ^4 - X / X ) - X
+( X - cos ( X * X ) ) * log ( X * X )
+cos ( X )
+X + ( ( ( X * X - X ) - X ) * X ) ^3
+( X / X - cos ( X ) ) - X
+( X ^2 * X ) ^3
+sin ( X / log ( X * X ) )
+( X / X - X ) ^3 - X
+( ( exp ( X - X ) ) ^2 ) ^4
+X ^2
+X / sin ( X - X ) + X ^2
+( cos ( X ) * X ) * log ( X / X )
+cos ( cos ( sin ( X ) / X ) )
+( ( ( ( ( ( X / X ) / X ) / X ) / X ) * X ) * ( X - X ) ^5 ) ^5
+log ( log ( X ) )
+( X / X ) * X
+sin ( X / ( X / X ) )
+( sqrt ( X ) * ( X + X ) ^5 ) ^3
+( cos ( X / X ) + ( ( X / X ) * X ) ^2 ) ^2
+( X - X ) / sqrt ( X * X + ( X + X ) / X )
+( X - X * X ) + X / X ^2
+( X + X / X ) * X
+( X * X ) / ( ( X * X ) / X - X ) ^2
+( X * X ) / X + X / X
+( X - X * X ) * X - cos ( X ) * X
+( ( X / X ) * ( X * X - X ) ^2 ) * ( X * X ) ^2
+( X / ( X / X ) ^2 ) / X ^3
+( X - X / X ) + X
+X ^5
+( X ^5 ) ^5
+( ( X - X / X ) + X ) ^4
+X ^5 - exp ( ( X - X ) ^2 )
+X - ( ( X - X ) + X ^2 ) ^4
+sin ( ( X - X ) - X * X )
+( ( X - X ) ^4 * X ) * exp ( X )
+( X + ( ( X / X ) * X ) * X ) / X
+( X / ( ( X * X ) / X ) ^2 ) * X
+sqrt ( cos ( X - X ) ) + X / X
+( X ^3 ) ^4 - X ^2
+X + ( ( X * X - X / X ) ^2 ) ^2
+log ( ( X * X - X ) / X )
+( ( X - X ) - X ) + X
+X - cos ( X )
+( exp ( ( X / X ) ^2 ) + X ) + X
+X ^2 / ( X * X )
+( sqrt ( sin ( sqrt ( X ) ) ) ) ^2
+( ( X + X ) ^2 / X ) * ( ( ( X / X ) / X ) / X )
+( ( X ^2 + X ) + X ^2 ) ^4
+log ( cos ( X ) ) / ( ( X * X ) * X )
+( X / X ) * exp ( ( ( X * X ) * X - X ) ^5 )
+( X / ( X / X ) ) ^5 * sin ( X )
+X * sqrt ( X )
+( X - ( X / X ) / X ) ^5 - X ^5
+sqrt ( X + X * X ) * ( X + X ) ^3
+( X + X ^5 ) - ( ( X / X ) / X ) ^2 * sqrt ( exp ( X ) )
+sqrt ( sin ( X ) / X ) / log ( X )
+X + ( X * X ^4 ) * X
+log ( ( X / X ) / X )
+( X / X ) * X
+X + sqrt ( sin ( exp ( ( X * X ) * X ) ) )
+( X - X ) - sqrt ( X )
+X + cos ( ( ( X / X ) / X ) / X )
+( ( exp ( X ) + X ) ^2 / X ) / X
+sin ( ( X * X ) / X )
+log ( sin ( sqrt ( X ) ) )
+( X ^2 / sqrt ( X ) + exp ( X * X ) ) + ( X * X ) * X
+( ( X - X ) ^2 - sqrt ( X ) * X ) - X
+( X / X ) ^5
+sin ( X / X )
+( ( X / X ) * X ) / X
+( ( ( X / X ) / X - X ) + X ^2 ) + X
+X / X + ( ( X * X ) / X ) * X
+cos ( cos ( ( X - X ) - X * X ) ) * ( X / X )
+exp ( ( sqrt ( ( X / X ) / X ) ) ^4 ) * sin ( X )
+( X / X ^4 ) * X
+( exp ( X ) * X ) ^2 / X
+log ( X ) + ( X + X ) ^5
+( ( X * X ) / X + X ) + cos ( X * X )
+( X / X + X ) + X
+( X - X ) ^3 / X
+( log ( X / X - X ) ) ^2
+( ( ( X / X ) ^3 ) ^2 ) ^4
+exp ( ( X * X + X ) ^4 ) + X / X
+sqrt ( ( X / X ) / X ) * X - X
+( X * X ) ^5
+( X / X ^2 ) / X + X
+( ( X * X ) ^2 / X ) / ( ( ( X * X ) / X ) / X ) ^2
+X / X + ( X ^2 ) ^3
+X * ( ( sin ( X + X ) + X ) - X )
+exp ( X * X - log ( X ) ) - X
+X * X ^5 + ( X * X ) / cos ( X * X )
+X - X
+( X - X / X ) - exp ( X )
+X ^2 / ( ( X + X ) ^5 ) ^3
+( ( X / X + X / X ) + X ) ^4
+( ( X / X ) / X - X / X ) ^3
+( X + X ) ^2
+sqrt ( ( X ^2 + X ) - X )
+sin ( sin ( sin ( X ^3 ) ) ) - X
+( X - X ) ^3
+( X - X / X ) - X
+( ( ( X / X ) / X ) ^4 + X * X ) ^2
+sqrt ( X ) - sin ( X ) / sqrt ( X * X )
+X ^3 * X ^3 + X / ( X / X )
+( X / cos ( ( X / X ) * X ^2 ) ) / X
+( ( X * X ) / X ) ^2
+( X * X ) * exp ( X )
+( X / X + X ) / ( X / X ^3 ) ^3
+cos ( ( ( X * X ) * X ) / X + X )
+log ( ( X * X ) * X + ( X * X ) * X )
+( X ^3 * X ) / log ( X )
+( X * X + log ( ( X * X ) / X ) ) + X / X
+( X + sqrt ( X / X ) ) - log ( X )
+( ( X * X - X / X ) - X ) ^2
+sqrt ( exp ( X / X ) ) / X
+cos ( X ) + ( ( X * X ) * X ^5 ) * X
+sqrt ( X / ( X * X ) - X )
+sqrt ( sqrt ( X ) )
+( ( X / X ) * X ) / ( ( X - X ) ^2 - X )
+( ( X * X ) ^3 / X ) / X ^2
+log ( ( X - X ) ^5 )
+X ^4 + ( log ( X ) ) ^4
+sqrt ( X + X ) - ( ( X / X + X ) + X ) ^3
+sqrt ( X / X ) * X
+( ( X ^4 ) ^4 ) ^2 - X * X
+X
+( X / ( ( X / X ) / X ) - X / X ) - X
+( ( X * X ) / X + X ^4 ) - X * X ^2
+( X * X ^3 ) / X
+X ^4 + sin ( X ) / X
+cos ( X / X ) * sqrt ( X / X )
+X * X + X * X ^4
+( ( X / X ) ^5 + X / X ) - X
+( X + X ) + X
+( X + X / X ) + X
+X ^4 + X
+( X * ( X - X ^3 ) ^3 ) / X
+( ( ( X / X ) ^4 ) ^3 ) ^5 + X
+X * X + ( ( X + X ) - X ) ^4
+exp ( ( X / X ) * X ) * log ( X * X )
+sin ( X - X ) - X
+( X / exp ( X ) ) / sin ( X )
+( ( X + X ) + ( X * X ) * X ) + X * ( X * X - X )
+X + ( ( X / X ) / X ) * X
+( sqrt ( ( ( X * X ) * X ) / X ) ) ^5
+X + cos ( log ( X * X + X ) )
+( ( X / X ^4 ) ^5 ) ^3
+sqrt ( X * X + X ^3 )
+( X + X ) + X / X
+( X + X / X ) + X ^3
+( X / X ) / cos ( X )
+( X + X ) ^4
+( X * X ) ^4 * X + X
+sqrt ( ( X * X ) * X - X ) / X
+( X + X * X ) ^2 + ( X + cos ( X ) ) ^2
+sin ( X / X - X * X )
+X ^2 * X - X / X
+( ( ( X * X ) * X ) * X ) * X
+( X * X - X ^4 ) - X ^2
+sqrt ( X - X ) / X
+( X ^3 * X ) * ( X ^3 ) ^2
+X + ( X - X ) / ( X * X )
+( X * X ) / X + ( X - X ) ^3 / ( X * X ) ^3
+( X / X ) ^2 / X ^3
+( X - X ) ^3
+( X / X ) * cos ( X ) + X
+( X * X ) * ( ( X * X ) * X )
+exp ( ( X * X ) ^3 * X )
+( X - cos ( sqrt ( X / X ) ) ) ^2
+X - ( ( X / X ) ^2 / X ) ^2
+( X / X ^3 ) / X - ( X * X ^3 + X )
+X ^5 / exp ( ( X + X ) - X ^2 )
+( ( ( X + X ) / X + X ) - sin ( X * X ) ) / sin ( X + X )
+( X + X ) + ( X / X ) / X
+( X ^4 ) ^2 + log ( X ^2 )
+( ( ( ( ( X - X ) + X ) - X / X ) + X ) - ( X * X ) ^4 ) - ( X / X ) / X
+( ( X + X ) ^3 / X - X ) ^4
+cos ( X * X ) - X / X
+X / X
+( X ^5 * X + cos ( X * X ) ) + X / X
+X ^2 / X + ( ( ( X * X ) / X ) * X ) / ( ( X + X ) / X )
+( X - X ) + X
+( log ( cos ( X ) ) ) ^3
+exp ( X ) + ( ( X - X ) ^2 ) ^2 * X
+( X + X ^2 ) + ( ( X * X ) * X ) * sin ( X * X )
+( X + X ^2 ) - X
+X / ( X - X )
+( X / X + ( X / X ) * X ) - log ( X / X )
+X / log ( ( X * exp ( X ) ) ^2 )
+sqrt ( ( X + X * X ) + X )
+exp ( X + X * X )
+X / ( X - X ^3 ) ^2
+( ( X * X ) * X ) ^5
+( X + X ) + ( X / X ) * exp ( X )
+( X + ( X * X ^3 ) / X ) / ( ( X * X ) / sqrt ( X ) )
+( ( X * X ) ^4 ) ^4 * X
+X + X / X
+( sqrt ( ( X / X ) / X ) ) ^3 / ( X + X )
+( X * X - log ( X * X ) ) ^4
+exp ( X ) - ( ( X * X - X ) / X ) / X
+sqrt ( X ) / ( ( X * X ) * X )
+X / cos ( X + X * X )
+( ( X ^2 - X ^2 ) - X * X ) + X
+X ^2 * X - ( X * X ) / X
+sqrt ( ( X / X ) * X ) / ( X * cos ( X ) )
+log ( sqrt ( X ) - X ) / X
+( ( X * X ) * X - X ) + X
+( X / log ( X ) - log ( X ) ) + X
+( X / X ) * cos ( X )
+sqrt ( X ) * ( X + X ) - X / X
+X * X ^3 + ( X * X ) ^3
+X / X ^3
+sin ( ( ( ( X * X ) / X ) * X ) / cos ( X ) )
+( sin ( X ) * ( X / X ) ) / ( X * X ^3 ) ^2
+X ^4 * cos ( ( ( X * X ) * X + X ) ^4 )
+( X * X ^5 ) / X
+log ( X / X ) * ( X / X ) ^5
+( X / X ) / exp ( X + X )
+( X - X ) ^3
+( X - X ) + X ^3
+sin ( X ) - X / X
+( X * ( X * X ) + X ) + X
+X + X * X
+( ( X * X ) / X ) * ( X * X ) ^2 + X
+X * X
+( ( X / X ) * X ) / X ^5
+X + ( X / X ^2 ) ^4
+sin ( X - X ^4 )
+X - sqrt ( X ) * X
+( ( X ^3 + X ) ^3 ) ^2
+( X / X ) / exp ( ( ( X * X ) / X ) * X ) + sqrt ( X )
+( X - X ) - ( ( X * X ) / X ^2 - X ) ^4
+log ( ( ( X / X ^3 ) ^3 ) ^3 )
+( X * X - log ( X * X ) ) ^2
+X / X + exp ( X )
+log ( ( X * X ) * X )
+X / X - exp ( sin ( ( ( X * X ) * X ) / X ) )
+log ( X )
+( ( X * X ) ^3 ) ^2
+( ( X ^2 ) ^4 / X ^4 ) ^3
+( ( X * X ) ^5 ) ^3 - cos ( X )
+X + ( ( X * X ) * X + ( X * X ) * X )
+( X + X ) ^4
+sqrt ( ( X / X ) ^4 )
+( X + X / X ) ^3
+X ^3 + X / X ^5
+( X / X ^3 ) * ( log ( X ) * X )
+( sin ( X ) ) ^3 / ( X ^3 / X )
+log ( X ^2 / X ) - sin ( X )
+( X * X ) ^5
+X * X ^4 - ( X * X ^3 ) / ( ( X * X ) / X + X )
+( ( X + X ^4 ) ^3 ) ^5
+sqrt ( X ) * X - X ^5
+X ^3 + sin ( X )
+( ( X / X ) / X + X ) + X
+sqrt ( ( X - X * X ) + cos ( X ) * X )
+( sin ( X ) ) ^4
+sin ( X * X ) * X - X
+sin ( X ) * X
+cos ( ( X / ( X + X ) ^3 ) / ( X - X ) ^3 )
+sin ( X - ( X - X ) / X ) - X
+( X / X ) * X + X * X
+sqrt ( sin ( X ) - X )
+X ^5 * ( ( X * X ) * X ) + X
+( sqrt ( X ) * X - exp ( X ) * X ) ^4
+X * X
+X ^5 + X
+( X / X ) / ( X / X ) ^2 - X
+( X + ( X * X ) ^3 ) ^3
+sqrt ( sin ( X ) / X ) + X
+X ^4 * X
+( X ^4 - ( log ( X ) ) ^4 ) + X
+( X / ( ( X + X ) ^2 ) ^4 ) * X
+log ( X ^4 + X ) - X / ( X / X )
+X ^5 / ( ( ( X * X ^2 ) * X ) * X )
+( X - X ) + X / X
+exp ( X ) / X + X / X
+( ( X * X ) * X ) ^2
+( X * ( ( X + X ) + X ) ) ^2
+cos ( X - X * X )
+X / X - ( log ( X ) / X ) / X
+( ( X + X ) - X ) - X / X
+sqrt ( sin ( sqrt ( X ) ) * X )
+X * ( ( X / X ) ^3 ) ^3
+( ( X * X ) * X ) * X
+exp ( sqrt ( sqrt ( X ) ) * X ) * X
+cos ( X / X ^2 )
+( X ^3 / X ) * X ^3
+( X ^3 ) ^5
+( ( X * X ) * sqrt ( X + X ) ) / X
+cos ( ( X * X ) * cos ( X * X ) )
+( ( ( X * X ) / X ) / X ) * X ^2
+X - sin ( X + X )
+( X / X ) / X + ( X / X ) / X
+X - ( ( ( ( X * X ) * X ) * cos ( X ) ) / X ) ^4
+( ( X + X * X ) - sqrt ( X ) ) - X / X
+( ( X - X ) - X ) ^4 + X
+( X * log ( sin ( X ) ) ) * X ^2
+sqrt ( X ) + ( ( X * X ) / X ) ^5
+( ( ( X + X ) + X ) ^4 / X ) * X
+X + ( ( ( X / X ) ^3 ) ^3 ) ^2
+log ( X ) * ( X * X )
+cos ( X ^4 / X )
+X * ( X * X ) - X / X ^5
+X / X - sin ( X * X )
+( X ^2 ) ^4 + ( X / X ) / X
+X * X ^2 + log ( X / X )
+( ( X / X ) / X - X ^4 ) ^5
+( X * ( X ^4 / X ) ) * X ^3
+( sin ( X ^2 ) * X ) * X
+X / ( ( X * X ) ^3 ) ^3
+( X / X - exp ( X ) ) / X - X
+exp ( X - X / X ) - X
+sin ( X ) + ( X ^3 * X ) * sin ( X )
+( X / X ) * ( ( X * X ) * X )
+( X * X ) / X + sqrt ( X )
+( X ^3 * X ) ^2 + X
+( X ^2 / sqrt ( X ^2 ) ) ^3
+X ^3
+( X + X ) + X * log ( X )
+( X / X + X ) ^2 + X / X
+X ^3 - exp ( X * X ^3 )
+X - cos ( X ^4 )
+( X - ( X * X ) / X ) ^2
+( X * X ^4 ) ^5 + X
+cos ( X * X ) / X + log ( X )
+X ^5 / sin ( X ) - ( X / X ) / X
+exp ( exp ( X * X ^2 ) ) / ( X - X )
+sqrt ( X + X ) * X
+( ( X + X * X ) ^3 ) ^2
+( X - X ) * X - X
+sqrt ( X * X )
+( X / X ) / log ( X / X )
+X ^2 / ( X * X ) ^2 + ( ( X / X ) * X ) * exp ( X )
+sin ( X * X )
+( ( X * X ) * X + X / X ) ^2
+( X * X ^4 ) * sqrt ( X / X ^3 )
+( X * X ) / X
+cos ( X * X ) - ( X / X ) / X
+X * X - cos ( ( X - X ) ^2 + X )
+X + ( ( X / X ) / X ) / X
+sqrt ( X / X ) * X - X
+( ( X + X ) - X ^3 ) - X
+log ( X + X )
+sqrt ( exp ( X ) - ( X * X ) / X )
+( X * X ^4 + X ) - X
+X / X
+X + cos ( X + X / X )
+sqrt ( X + X / X )
+cos ( ( X / X ) / X ) / exp ( X )
+( X * X ) ^2
+X / ( X - X ) ^3
+( X * cos ( log ( X ) ) ) * X
+X * cos ( X / X ) - X
+( cos ( sin ( exp ( X ) ) ) ) ^2 + X / X
+sqrt ( ( X * X ) / X )
+( ( X - X ) - X ) ^3 + X
+( X ^3 / X + X ) ^4 / X
+( ( X - X ) + X * X ) + X
+X ^4 - ( X / X ) ^3
+( X / X + X ) + ( ( X / X ) * X ) / X
+( cos ( X ) * X ) * ( sqrt ( X ) / cos ( X ) )
+( sin ( X + X ) / X ^2 ) ^5 + cos ( X )
+( ( X / X - X ^3 ) + X ) ^4
+( X / X ^2 ) ^3
+X * ( ( sqrt ( X ) * X ) / X )
+X * cos ( X * X ) - X
+X + X ^2
+( X - ( X * X ) * X ) + sin ( X )
+( sin ( X - X ) ) ^2
+( X - X ) ^2
+( ( X * X ) ^3 - X ) - X ^3
+( exp ( X ) ) ^2 / X ^2
+( X - X ) + X
+( ( ( ( X / X ) * X ) * X ) ^4 ) ^3 + X
+X - sin ( ( X / X ) ^3 )
+log ( cos ( X - X ) + X )
+X / cos ( X / X )
+cos ( X ) / ( ( X ^5 * X + X ) - X )
+cos ( X ) * cos ( log ( X ) ) + X
+( X / log ( X ) ) ^2
+( X * X + X ) - X
+( X + X ) ^4 - cos ( sqrt ( X ) / X )
+X + ( sin ( X ^2 ) ) ^3 / ( X / X )
+( X / X ) * ( X ^2 ) ^4 + X
+( X / ( X * X ) ) ^4
+exp ( X * X ) - X
+sin ( X * X )
+sin ( X + ( X * X ) / X ) * ( X / X ^3 )
+( X + ( X / X ) ^3 * X ) - X
+( X ^4 - X ) * sin ( X )
+( X / X ) ^2 / X ^2
+( ( X - X ) ^2 ) ^3 + X
+cos ( ( ( X / X ) / X ) / X - X ^4 ) * log ( ( log ( X ) - X ) - X )
+cos ( X - sqrt ( X ) )
+( ( X / X ) * X ) / X
+X ^3 / X + X
+X + ( X ^3 / X ^4 ) / X ^5
+X ^3
+( ( X - X ) ^2 ) ^4
+X ^3 - ( sqrt ( X ) * X ) / cos ( X )
+( X / X - X ) - exp ( X / X )
+sqrt ( ( sqrt ( sqrt ( X ) ) ) ^5 / X ) - ( X * X ) * X
+( ( X * X ) ^2 ) ^4 / X
+sin ( ( ( X / X ) / X ) ^3 + X ^2 )
+X ^3 / ( X * X ) ^3
+sin ( X - X ) - ( ( X / X ) * ( X * X ) ) / X
+( X - X ^3 / X ) ^4 * sin ( X )
+( cos ( X + X * X ) * X ) ^2
+( ( X / X ) / X ) / X
+X * X - ( ( X / X ^2 ) * X ) / X ^2
+( ( X - ( X * X ) / X ) + X ) * X ^4 - X / X
+( ( X * X ) ^4 ) ^5
+X / ( ( X * X ) ^5 * X + X )
+( X - exp ( X + X ) * X ) - X
+X - X / X ^4
+exp ( X ) + exp ( X / X ) * X
+exp ( sin ( ( X / X ) * X + X ) / X ) * ( ( ( X / X ) / X ) / X )
+( sqrt ( X ) * X ) ^3
+( X * X ) * X - cos ( sqrt ( X ) * X ) / X
+( X - X ) + sqrt ( ( ( X + X ) - X ) + X )
+( ( X / X ) / ( X / X ) ^3 ) * X - X ^4 * X
+( X / X ) / X
+( sin ( X ) - X ^3 ) + X / ( X / X ) ^3
+( cos ( X ) ) ^2 + ( X * X ) / X
+X / X - ( X / X ) * X
+log ( X * cos ( X ) ) / X
+cos ( X ^4 - X ^2 )
+sqrt ( X ) * X
+( X ^2 * X - X ^4 ) - X * X
+( X / ( X * X ) ^2 ) / log ( X * X )
+( ( X / X ) / X - X * X ) + X * X
+X - cos ( X ) * X ^2
+X / X + X
+( ( X / X ^4 ) * X ) * ( ( X / X - X ) + X ) ^3
+( ( X - ( ( X / X ) / X ) / X ) - X * X ) * X ^2
+( X * sin ( X ) ) / X
+( X ^2 ) ^3 / ( ( ( X / X ) / X ) ^5 * X )
+( cos ( X ) + X / X ^2 ) / X
+( X / ( ( X * X ) * X ) ) / ( X * X ) ^3
+( X ^3 * X ) / X + X
+X ^2 + X ^5 / X
+( X / ( X + X ) + X / X ) + X ^5
+( ( X * X ) ^2 + ( X / X ) / X ) ^2
+sqrt ( X - X ) / ( X - X )
+sin ( ( ( X * X ) / X ) ^2 ) * X + X
+X - ( ( X * X ) / X ) * X
+sqrt ( ( X / X ) / X + sin ( log ( X ) ) )
+sqrt ( X ) / ( ( X / X ) * X )
+( sin ( ( X - X ) ^3 ) ) ^3 + X
+( X - sin ( X / X ) ) - X * X
+( X / X ) / X - ( ( X - X ) - X )
+( X * X ) / sin ( X ) + ( ( X * X ) / X ^4 ) / ( X / X ) ^2
+sin ( X ) / ( X * X ) ^5
+sin ( ( X - X * X ) + X ^2 )
+cos ( ( X ^4 ) ^4 )
+( ( X + X * X ) + sqrt ( X * X ) ) + X ^3
+cos ( X ^4 * sqrt ( X ) )
+X - cos ( X )
+X + X
+sqrt ( X ) / X ^5
+( X * ( X + X ) ) ^2 * X
+cos ( X ^5 * X )
+sqrt ( X ^2 ) * X
+X - ( X - X ^4 ) / log ( X - X )
+sqrt ( X ) + ( X * X - X ) / X ^2
+( X / X ) * X ^2
+sqrt ( X ) * X
+sqrt ( ( X + X ) - X / X )
+( ( ( X * X ) / X ) * X ) / X
+log ( sqrt ( X / X - X / X ) ) + X
+sqrt ( log ( X ^3 ) )
+( ( X * X ) ^3 / X ) ^2
+( ( X - X ) ^3 / X ^3 + X * X ^3 ) - X
+X * X ^5
+( X / ( X - X / X ) ) ^5
+X + ( X / X ^3 ) / X
+( log ( X ) ) ^4 / sqrt ( X )
+cos ( sin ( X ) + X * X ) * X
+( cos ( X - X ) * X ) * X
+X
+sin ( ( X / X ) / X + X )
+X * X ^3 + ( X * X ) * X
+X + log ( X )
+( X * X ^2 ) / ( ( X * cos ( X ) ) / exp ( X ) )
+sqrt ( X * X ^2 )
+( X / X ^4 ) / X
+( ( ( X / X ) * X ) / X ) / X
+( cos ( X + X ) ) ^4 / X
+( ( X * X ^3 ) / X ) * X
+exp ( ( ( ( X / X ) / X ) / X ) ^2 )
+sqrt ( X / X + log ( X - X ) / X )
+( X / X ^3 ) / sqrt ( X )
+( ( X + X ) ^4 - X ) * X
+( ( ( X / X ) / X ^5 ) * ( X / X ) ) ^5
+( X / X ^4 ) / sin ( X )
+( ( X / X ) ^3 * X ) * X - X ^3
+( ( ( X * X ) * X ) * X ^3 ) ^5 - X / X
+( ( X / X ) * X ) / ( X * X - X )
+X * ( sin ( X ) + X ) - X ^3
+X + cos ( X ) / cos ( X )
+( ( X - X ) + X ) ^2 + sin ( X )
+( sqrt ( X ) - X ) + sqrt ( X / X )
+( ( ( X / X ) * X ^2 ) / X ^2 ) * X ^2
+( X / X - X ) + ( ( X / X ) / X ) * X
+( X - X / X ) + ( X ^5 ) ^2
+X - X
+( exp ( X ) / X ) * ( X * X )
+X ^5 * X + X
+( X ^2 + X ) + X
+( X / X ) / ( ( X / X ) / X ) ^5 - X
+X - X / X ^2
+exp ( X + cos ( X ) ) * log ( X * X )
+sin ( ( X * exp ( X ) ) / X ^2 )
+( X - log ( X ) ) + X
+( X - X ) + ( X - X ) ^2
+( X / X ) ^4 + X ^3
+( X - X ) ^4 - sin ( X )
+sqrt ( ( ( X / X ) * X ) ^5 )
+( X / X ) * X
+cos ( cos ( log ( ( ( X * X ) * X ) * X ) ) )
+log ( log ( X ) ) + X ^5
+sqrt ( X ) * cos ( X ^2 * X )
+X / X
+cos ( log ( X * X ) )
+( X + X ) + X * X
+X ^2 * ( ( X / X ) / X ) - X ^5
+sqrt ( X ) - ( ( X / X ) * X ) / X
+X + ( X + X ) ^3
+exp ( X ) * cos ( X ^2 / X )
+sin ( ( X + X ) + X ) * ( X * ( X * X ) )
+X / sqrt ( X / X + X )
+( ( X ^3 ) ^5 + X * X ) - ( X / X ^5 ) * X
+( ( X * X ) ^3 ) ^4 / ( X + X ) ^5
+( X * X ) / cos ( X )
+X ^2 + exp ( ( X * X ) ^2 / X )
+( cos ( X ) / X ^2 ) ^5
+( ( ( X / X ) * X ) * X ) / X
+( ( X / X ) ^5 - X ) + X ^4
+( ( X * X ) / X ^2 ) ^3 - cos ( ( X / X ) / X )
+cos ( ( ( X * X ) / X ) / X )
+cos ( X / X )
+( ( X / cos ( X ) ) / sqrt ( X ) ) / X
+( ( X - X ) + X * X ) + X
+( ( X / X + sin ( X * X ) ) - X ) - X
+X / X - cos ( X * X )
+log ( X - X ) - ( ( X * X ) * X ) ^2 * X
+( ( ( X / X ^3 ) * ( X / X ) ) / X ^3 ) * X
+X ^2 - sin ( ( ( X / X ) ^3 ) ^3 )
+X / ( X / X - X ) - log ( X * X )
+( ( X / X ) ^2 * X ) * ( ( X * X ) * X )
+( ( X / X ) / exp ( X ) ) * X ^3
+X * X
+X * ( X - X ) + ( X - ( X * X ) ^2 )
+( ( ( X * X - X ) - X * X ) + X ) * X
+sin ( ( ( X / X ) * X ) ^3 )
+X - cos ( ( X * X + X ) - X )
+X / ( X + X ) ^2 + X * X
+( ( X * X ) * cos ( X ) ) / X
+( ( X * X ) ^3 ) ^5 / ( X - X )
+X - ( X / X + ( X / X ) * X ) ^2
+( X * X ) / X
+( X / X ) / X - X * X
+X ^2 / cos ( X * X )
+sqrt ( ( X / X ) ^5 )
+cos ( X / X + exp ( X * X ) )
+( exp ( X ) - X ) + ( X ^2 ) ^2
+( X / X ) * X
+log ( X / X - X )
+cos ( X / X ) + ( X ^2 ) ^2
+sqrt ( ( X * X ) / X ) - X * ( X * X ) ^4
+( X / X ) * X + exp ( ( ( X * X ) / X ) / X )
+( X / cos ( X ) ) / exp ( X ^2 )
+sin ( X * X ) - sin ( X + X / X )
+( ( X * X ) * X ) * X + X
+( X ^5 ) ^3 / ( X / X )
+( cos ( X ) - X ) + X
+( X * X ) ^3
+( cos ( X / X ) ) ^2 + X * X
+( exp ( X + X ^2 ) ) ^4
+sqrt ( X ) - log ( X )
+cos ( X / X )
+exp ( exp ( X ) ) * X
+cos ( X ) - exp ( X ^2 ) * X
+( ( X * X ) * X ) ^3 - ( ( X * X ) / X ) * X
+( X * X ) * X
+( ( X * X ) * ( X / X ) ) / ( X ^3 / X ^3 )
+cos ( ( sqrt ( ( ( X * X ) * X ) * X ) ) ^4 )
+( X - X ) ^2 + X * X
+X + ( ( X * X - X ) / X ) * X
+X / X + X
+( ( X * exp ( X ) ) * X ) / X
+X * ( X / X )
+( X ^5 ) ^2
+( sin ( X ^4 ) - X ^3 ) - X
+( ( X - X ) ^2 / X ) / ( X / X )
+( X * X ) ^3 / X - X
+X - log ( X ) / X
+( X * X + X ) - ( X * X ) / X
+( X * sqrt ( X ) ) * log ( X )
+( ( X / X ) / X ) ^5
+( X / ( X / X ) ) * ( X / X ) ^2
+( ( X + X ) ^4 ) ^3 - X
+sin ( X * X ) * X ^4 + ( sin ( X ) ) ^5
+exp ( X ) - X
+( X ^3 ) ^3
+( X * cos ( X / X ) ) / X
+X / X + ( X / X ) ^5
+X ^4 / X + ( X - X ) ^4
+( ( X * X ) * X ) / X + ( X * X ) / X
+( X ^3 / X ) ^2 - X
+exp ( X / ( X - X ) )
+( ( X / X ) * sin ( X ) ) * X - X
+log ( ( X * X ) / X )
+log ( exp ( X ) ) - X
+( X / X ) / ( X + X ) ^5
+X - exp ( ( X / log ( X ) ) / X )
+log ( X ) + X ^5
+( X - X ) - ( X / X ) * ( X - X ) ^4
+X - ( ( ( X * X ) / X ) / log ( X ) ) ^2
+log ( X ) / X
+sqrt ( ( X * X ) ^2 ) - X / ( X * X )
+sqrt ( X ) - ( ( ( X - cos ( X ) ) - X ) - X )
+X
+X / X ^4 - cos ( X )
+( X / X - X ) - X
+( X * X ) / ( X * X )
+( X - exp ( X + X ) ) + X / X ^2
+( X / ( sin ( X ) ) ^4 ) * X
+sqrt ( cos ( X ) / cos ( X ) )
+sqrt ( X / ( X - X ) ) + X
+( ( X / X ^3 ) / X ^2 ) * X
+( X / X ) ^3
+( X / X ) / X
+( ( ( X / X ) ^2 * X ) ^2 ) ^2
+( ( X * X ) ^5 ) ^3
+( X + X ) ^2
+exp ( log ( sin ( X ) * X ) )
+X + ( X * X ) * X
+X ^5 * X
+cos ( X - X ) * X - X
+X * X + X * X ^3
+( sin ( cos ( X * X + X ) ) + X ) ^4
+cos ( X / X ) / sin ( X / X )
+sqrt ( ( X * X ) / X ^2 ) / ( X ^2 / X )
+( X ^3 - X ) - exp ( X )
+X ^4 + X * X
+( ( X * X ) ^4 * ( X - X ) ) * X
+( X ^3 ) ^2 * ( ( ( ( X / X ) / X ) / X ) / X ) + X
+( X ^3 - X ) + X * X
+X ^2 - X * X
+( ( X / X ) / X ) / ( X * X ) - sin ( X ) / X
