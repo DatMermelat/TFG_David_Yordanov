@@ -14,7 +14,7 @@
     "max_tree_height": 7,
     // Path where the generated expression set will be saved. If empty string, the expression set won't be saved
     // This path is also used in training and reconstruction script as input into the model
-    "expression_set_path": "../data/expression_sets/bms_test_set.json"
+    "expression_set_path": "../data/expression_sets/bms_ng1_8.json"
   },
   "training": {
     // Number of epochs the model trains for
@@ -25,7 +25,7 @@
     "latent_size": 32,
     "seed": 18,
     // Path where model parameters will be saved. If empty string, the parameters won't be saved
-    "param_path": "../params/bms_test_set.pt"
+    "param_path": "../params/bms_ng1_8.pt"
   },
   "reconstruction": {
     // If smaller dataset is True, it will train the model with the specified number of expressions

@@ -1,10 +1,11 @@
-from typing import Dict, Any
-
 import matplotlib.pyplot as plt
 import torch
 import re
 import os
 import shutil
+
+from tree import Node
+from symbol_library import SymType
 
 def distance(point1: torch.Tensor, point2: torch.Tensor) -> float:
     return torch.norm(point2 - point1).item()
@@ -19,21 +20,23 @@ def torch_to_coords(tensor: torch.Tensor) -> list:
     return tensor.flatten().tolist()
 
 
-def expr_complexity (expr: str) -> int:
-    symbols = ["+", "-", "*", "/", "^", "sin", "cos", "exp", "sqrt", "log"]
-    complexity = 0
+def expr_complexity (expr: Node, symbols: dict) -> int:
+    """
+    Computes the complexity of an expression tree.
+    Complexity is defined as the number of INNER nodes in the tree.
+    """
+    if expr is None:
+        return 0
+    elif symbols[expr.symbol]["type"] not in [SymType.Operator, SymType.Fun]:
+        return 0
+    else:
+        return 1 + expr_complexity(expr.left, symbols) + expr_complexity(expr.right, symbols)
 
-    for symbol in symbols:
-        if len(symbol) == 1:  # Single-character operator
-            complexity += expr.count(symbol)
-        else:  # Multi-character function
-            complexity += len(re.findall(rf"\b{symbol}\b", expr))
 
-    return complexity
-
-
-# Method that creates an empty folder. If the folder already exists, it's overwritten.
 def clean_folder(path):
+    """
+    Creats a new empty folder. If the folder already exists, it is overwritten.
+    """
     if os.path.exists(path):
         shutil.rmtree(path)
     os.makedirs(path, exist_ok=True)
