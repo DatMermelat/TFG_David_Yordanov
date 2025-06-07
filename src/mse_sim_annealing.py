@@ -8,8 +8,7 @@ import copy
 from model import HVAE
 from hvae_utils import load_config_file, tokens_to_tree
 from symbol_library import generate_symbol_library
-from seeslab_utils import clean_folder, expr_complexity
-from plot_utils import overlap_plots, plot_avg
+from seeslab_utils import clean_folder
 from evaluation import RustEval
 from mse_regression import RegressionData, set_starting_point, get_expr_mse, generate_data
 
@@ -56,13 +55,9 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
         mse_delta = new_mse - current_mse
 
         # Applying SA probabilistic model for accepting changes
-        if mse_delta <= 0 or np.exp(-mse_delta / temp) > np.random.rand(): # Accept change
-            try:
-                results.save_expr_data(iteration=i, mse=new_mse, expr=new_expr, coords=new_vector)
-                current_mse, current_expr, current_vector = new_mse, new_expr, new_vector.clone()
-            except RecursionError:
-                print(f"Recursion Limit: Stopped after {i} iterations.\n")
-                return results
+        if (mse_delta <= 0 or np.exp(-mse_delta / temp) > np.random.rand()) and new_expr.height() <= 7: # Accept change
+            results.save_expr_data(iteration=i, mse=new_mse, expr=new_expr, coords=new_vector)
+            current_mse, current_expr, current_vector = new_mse, new_expr, new_vector.clone()
 
             # Updating the best solution if necessary
             if current_mse <= best_mse:
@@ -70,6 +65,10 @@ def mse_sim_annealing(model, data: np.array, params: dict) -> RegressionData:
                 best_mse = current_mse
         else: # Reject change and go back to previous solution
             new_expr, new_vector = current_expr, current_vector.clone()
+
+            # Saving the best solution after the final iteration for plotting purposes
+            if i == params["max_iter"]:
+                results.save_expr_data(iteration=i, mse=current_mse, expr=current_expr, coords=current_vector)
 
         # Applying the cooling function after specified cooling delay
         if i % int(params["cooling_delay"]) == 0:
@@ -114,14 +113,15 @@ if __name__ == '__main__':
         "log ( X + 1 ) + log ( X ^2 + 1 )",
         "sqrt ( X )"
     ]
-
-    for i in range(0,len(ng_expressions)):
+    print(params)
+    
+    for i in range(0,len(ng_expressions)-3):
         tokens = ng_expressions[i].split(" ")
         expr_tree = tokens_to_tree(tokens, so)
 
         # Generating evaluation data matrix
         target, data, coords = generate_data(model, expr_tree)
-        results_path = "../seeslab/sa_test" + f"/nguyen{i}"
+        results_path = "../seeslab/sa_ng_t5e-3_01" + f"/nguyen{i}"
         clean_folder(results_path)
 
         for i in range(int(args.runs)):
