@@ -58,7 +58,7 @@ def generate_grammar(symbols):
         grammar += "T -> R '(' E ')' [0.2]\n"
         remaining -= 0.2
         function_prob = 1/len(functions)
-        
+
     remaining /= 3
     grammar += f"T -> V [{2*remaining}]\n"
     grammar += f"T -> '(' E ')' [{remaining}]\n"
@@ -70,7 +70,7 @@ def generate_grammar(symbols):
     if constants:
         grammar += f"V -> 'C' [{2*var_prob}]\n"
 
-    
+
     for funct in functions:
         grammar += f"R -> '{funct}' [{function_prob}]\n"
 
@@ -187,13 +187,18 @@ if __name__ == '__main__':
     T -> R '(' E ')' [0.2]
     T -> V [0.4]
     T -> '(' E ')' [0.2]
-    T -> '(' E ')' '^' '(' E ')' [0.2]
-    V -> 'X' [0.75]
-    V -> 'C' [0.25]
-    R -> 'sin' [0.25]
-    R -> 'cos' [0.25]
-    R -> 'exp' [0.25]
-    R -> 'sqrt' [0.25]
+    T -> '(' E ')' '^' '(' E ')' [0.04]
+    T -> '(' E ')' '^' '2' [0.06]
+    T -> '(' E ')' '^' '3' [0.06]
+    T -> '(' E ')' '^' '4' [0.02]
+    T -> '(' E ')' '^' '5' [0.02]
+    V -> 'X' [0.40]
+    V -> 'C' [0.60]
+    R -> 'sin' [0.20]
+    R -> 'cos' [0.20]
+    R -> 'exp' [0.20]
+    R -> 'sqrt' [0.20]
+    R -> 'log' [0.20]
     """
 
     if grammar is None:

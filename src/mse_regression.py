@@ -225,7 +225,7 @@ if __name__ == '__main__':
         expr_tree = tokens_to_tree(tokens, so)
 
         # Generating evaluation data matrix
-        target, data, coords = generate_data(model, expr_tree)
+        _ , data, _ = generate_data(model, expr_tree)
         results_path = "../seeslab/test_03" + f"/nguyen{i}"
         clean_folder(results_path)
 

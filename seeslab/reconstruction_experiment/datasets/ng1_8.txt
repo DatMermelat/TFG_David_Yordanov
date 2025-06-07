@@ -1,0 +1,8 @@
+X ^3 + X ^2 + X
+X ^4 + X ^3 + X ^2 + X
+X ^5 + X ^4 + X ^3 + X ^2 + X
+X * X ^5 + X ^5 + X ^4 + X ^3 + X ^2 + X
+sin ( X ^2 ) * cos ( X ) - X / X
+sin ( X ) + sin ( X + X ^2 )
+log ( X + X / X ) + log ( X ^2 + X / X )
+sqrt ( X )
