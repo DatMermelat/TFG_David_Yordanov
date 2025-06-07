@@ -88,7 +88,7 @@ def generate_plots (plots: list, path: str):
     """
 
     for plot in plots:
-        plt.figure(figsize=(6, 4))
+        plt.figure(figsize=(8, 5))
 
         # Plot type
         if plot["type"] == "scatter":
@@ -97,7 +97,8 @@ def generate_plots (plots: list, path: str):
         elif plot["type"] == "line":
             sns.lineplot(x=plot["x"], y=plot["y"])
         elif plot["type"] == "histogram":
-            sns.histplot(plot["data"], kde=True, discrete=True, stat="probability")
+            discrete = False if "bins" in plot else True
+            sns.histplot(plot["data"], bins=plot.get("bins", "auto"), discrete=discrete, stat="probability")
         else:
             raise ValueError(f"Unknown plot type: {plot['type']}")
 

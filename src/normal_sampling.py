@@ -48,7 +48,6 @@ class NormalSampling:
             "title": "Complexity Histogram",
             "xlabel": "Complexity",
             "ylabel": "Relative Frequency",
-            "bins": "auto"
         })
 
 

@@ -12,12 +12,12 @@ class BmsReader:
     Extracts only the mathematical expressions from the BMS dataset file.
     """
     with open(file_path, 'r') as file:
-      expressions = []
+      expressions = set()
       lines = file.readlines()
       for line in lines:
-        expression = line.strip().split("||")[2]
-        expressions.append(expression)
-    return expressions
+        expression = line.strip().split(" || ")[0]
+        expressions.add(expression)
+    return list(expressions)
 
 
 def get_symbols(expressions: list):
@@ -41,7 +41,7 @@ def create_symbol_mapping(symbols: set):
   """
   symbol_mapping = {}
   hvae_variables = "XYZABDEFGHIJKLMNOPQRSTUVW"
-    
+
   for symbol in symbols:
     if symbol == "x":
       symbol_mapping[symbol] = "X"
@@ -61,8 +61,10 @@ def add_whitespaces(expression: str):
   """
   Adds whitespaces around every token in the expression.
   """
-  aux = expression.translate(str.maketrans({"(": " ( ", ")": " ) "}))
-  ws_expr = re.sub(r'\s+', ' ', aux).strip()
+  # aux = expression.translate(str.maketrans({"(": " ( ", ")": " ) "}))
+  for char in expression:
+      expression = expression.replace(char, f" {char} ")
+  ws_expr = re.sub(r'\s+', ' ', expression).strip()
   return ws_expr
 
 
@@ -72,7 +74,7 @@ def convert_to_hvae(expressions: list, symbol_mapping: dict):
   INPUT: list of expression strings in BMS notation
   OUTPUT: list of expression strings in HVAE notation
   """
-  converted = []
+  converted = set()
 
   for expression in expressions:
       ws_expression = add_whitespaces(expression)
@@ -82,21 +84,20 @@ def convert_to_hvae(expressions: list, symbol_mapping: dict):
         if token in symbol_mapping:
           tokens[i] = symbol_mapping[token]
 
-        elif token == "-":
-          del tokens[i]
+        # elif token == "-":
+        #   del tokens[i]
 
       # Converting tokens back to string
       expression = " ".join(tokens)
-      converted.append(expression)
-  return converted
+      converted.add(expression)
+  return list(converted)
 
 
 if __name__ == '__main__':
-  bms_dataset_filename = ""
-  hvae_dataset_filename = ""
-  path = "../seeslab/bms_experiment/bms_datasets"
-  bms_dataset_path = os.path.join(path, bms_dataset_filename)
-  hvae_dataset_path = os.path.join(path, hvae_dataset_filename)
+  bms_dataset_filename = "ns_ng1_7.txt"
+  hvae_dataset_filename = "ns_ng1_7.txt"
+  bms_dataset_path = os.path.join("../", bms_dataset_filename)
+  hvae_dataset_path = os.path.join("../", hvae_dataset_filename)
   reader = BmsReader()
 
   expressions = reader.extract_expressions(bms_dataset_path)

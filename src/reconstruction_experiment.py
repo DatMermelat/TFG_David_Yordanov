@@ -57,8 +57,12 @@ class ReconstExperiment:
         else:
           self.save_result(str(tree), decoded_expression, is_successful=False)
 
+    # Sort results by number of successful tries in descending order
+    self.results = dict(sorted(self.results.items(), key=lambda item: item[1]["n_successful"], reverse=True))
+
   def to_txt(self, path: str):
     with open(path, 'w') as file:
+      file.write("total_tries: " + str(self.total_tries) + "\n")
       file.write("success_rate: " + str(self.total_succesful / self.total_tries) + "\n")
       for expr, result in self.results.items():
         file.write(f"{expr.strip()} || {result['tries']} || {result['n_successful']/result['tries']} || {result['decodings']}\n")

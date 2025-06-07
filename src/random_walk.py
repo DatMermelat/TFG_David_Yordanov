@@ -82,19 +82,20 @@ class RandomWalk:
         self.plots.append({
             "type": "histogram",
             "data": total_visits,
-            "bins": "auto",
+            "bins": np.logspace(0, np.log10(max(total_visits)), num=15),
             "title": "Visits distribution",
-            "xlabel": "log10(Visits)",
+            "xlabel": "Visits",
             "ylabel": "Relative Frequency",
+            "xscale": "log"
         })
 
         generate_plots(self.plots, path=path)
 
     def to_txt (self, path: str):
         with open (path, 'w') as file:
-            file.write(f"Expression || Steps without change || Distance to next change || Norm\n")
+            file.write(f"Step || Expression || Steps without change || Change Distance|| Complexity || Norm\n")
             for step_data in self.walk_data:
-                file.write(f"{step_data['expr']} || {step_data['steps_no_change']} || {step_data['change_distance']} || {step_data['norm']}\n")
+                file.write(f"{step_data['step']} || {step_data['expr']} || {step_data['steps_no_change']} || {step_data['change_distance']} || {step_data['complexity']} || {step_data['norm']}\n")
 
     def run(self, from_origin: bool = True):
         # Starting point
@@ -135,10 +136,9 @@ class RandomWalk:
                     self.n_unique += 1
                     self.expressions[str(current_expr)] = {
                         "first_visit": step,
-                        "total_visits": 1
+                        "total_visits": 0
                     }
-                else:
-                    self.expressions[str(current_expr)]["total_visits"] += 1
+                self.expressions[str(current_expr)]["total_visits"] += 1 + steps_no_change
 
                 # Updating walk-tracking variables
                 current_expr = new_expr
@@ -165,12 +165,12 @@ if __name__ == '__main__':
 
     steps = 10000
     runs = 10
-    results_path = f"../seeslab/random_walks/rw_test"
-    clean_folder(results_path)
+    results_path = "../seeslab/random_walks/rw_bms_test"
 
     for run in range(runs):
         rw = RandomWalk(model, so, steps=steps, step_size=0.05)
         rw.run(from_origin=True)
+        clean_folder(os.path.join(results_path, f"plots{run}"))
         rw.plots(os.path.join(results_path, f"plots{run}"))
         rw.to_txt(os.path.join(results_path, f"rw{run}.txt"))
 

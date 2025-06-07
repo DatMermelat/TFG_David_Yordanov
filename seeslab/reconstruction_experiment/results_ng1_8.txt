@@ -1,9 +1,10 @@
+total_tries: 8
 success_rate: 0.25
+sin(X^2)*cos(X)-X/X || 1 || 1.0 || {'sin(X^2)*cos(X)-X/X'}
+sqrt(X) || 1 || 1.0 || {'sqrt(X)'}
 X^3+(X^2+X) || 1 || 0.0 || {'X^3+X^2*X'}
 X^4+(X^3+(X^2+X)) || 1 || 0.0 || {'X^4+X^3*(X/X)'}
 X^5+(X^4+(X^3+(X^2+X))) || 1 || 0.0 || {'X^3+(X^3+((X+X)+X))'}
 X*X^5+(X^5+(X^4+(X^3+(X^2+X)))) || 1 || 0.0 || {'X*(X+X/X)+X^5*((X+X)+X)'}
-sin(X^2)*cos(X)-X/X || 1 || 1.0 || {'sin(X^2)*cos(X)-X/X'}
 sin(X)+sin(X+X^2) || 1 || 0.0 || {'sin(X)+sin(X+X/X)'}
 log(X+X/X)+log(X^2+X/X) || 1 || 0.0 || {'log(X+X/X)+log(X/X+X/X)'}
-sqrt(X) || 1 || 1.0 || {'sqrt(X)'}
